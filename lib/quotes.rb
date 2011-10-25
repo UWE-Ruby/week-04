@@ -7,5 +7,16 @@
 def all_quotes(filename)
   # readlines will return an array of lines but includes the newline character "\n"
   # here we strip that off of all the quotes.
-  File.readlines(filename).map {|quote| quote.strip }
+  if File.exists? filename
+    File.readlines(filename).map {|quote| quote.strip }
+  else
+    []
+  end
 end
+
+# 
+# Here is where you will write the methods that are defined in the associated 
+# specifications file.
+# 
+# @see http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Method_Calls
+#
