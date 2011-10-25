@@ -6,7 +6,7 @@ require "spec_helper"
 # 
 # Simply uncomment the examples below and allow it to guide you to the method.
 # 
-# describe "#find_superheroes" do
+# describe "SuperHeroes#find_by" do
 #   
 #   context "when searching for one criteria" do
 #     

@@ -11,10 +11,57 @@ unless Kernel.respond_to?(:require_relative)
   end
 end
 
-#
-# The following require methods are loading the specified files found in the 
-# local filepath
-# 
-require_relative 'quotes'
+
+# Loads the url_builder file which will contain your method #url_builder
+
 require_relative 'url_builder'
-require_relative 'bonus_superhero'
+
+
+#
+# Both of the quotes files should use this method #all_quotes. It is included
+# in this file as this is common to both of those files.
+# 
+
+#
+# @param [String] filename the name of the file to load all the quotes.
+# 
+# @return [Array<String>] all the quotes found in the file.
+#
+def all_quotes(filename)
+  # readlines will return an array of lines but includes the newline character "\n"
+  # here we strip that off of all the quotes.
+  if File.exists? filename
+    File.readlines(filename).map {|quote| quote.strip }
+  else
+    []
+  end
+end
+
+# Loads the search_for_quote and find_quote files which will contain your 
+# methods: #search_for_quote and #find_quote
+
+require_relative 'search_for_quote'
+require_relative 'find_quote'
+
+
+
+
+#
+# This struct and array is used by both of the superhero related files.
+# It is included here so that it will be avaialble to both of those files
+# 
+
+Superhero = Struct.new :name, :origin, :nemesis, :nick_name
+
+SuperHeroes = [ 
+  Superhero.new("Batman", "Gotham City", "Joker", "Caped Crusader"),
+  Superhero.new("Robin", "Gotham City", "Joker", "Boy Wonder"),
+  Superhero.new("Superman", "Krypton", "Lex Luthor", "Kal El"),
+  Superhero.new("Supergirl", "Krypton", "Bizzaro", "Kara Zor-El") ]
+
+
+# Loads the display_superheroes and find_superheroes files which  will contain
+# your methods: #display_superheroes and #find_superheroes
+
+require_relative 'display_superheroes' 
+require_relative 'superheroes_find_by'
