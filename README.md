@@ -6,9 +6,22 @@ This week we take another step towards Test-Driven Development. Similar to how y
 
 ### Outline
 
-* Exercise
+#### Exercise
+
+* Fork and clone this repository
+* Fix the tests on a branch
+* Push your changes to Github on that branch
+
+#### Reading
+
+* [Git Branching](http://progit.org/book/ch3-0.html)
+* [Methods](http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Method_Calls)
+* [Methods](http://ruby-doc.org/docs/ProgrammingRuby/html/tut_methods.html)
+* [Enumerable](http://blog.jayfields.com/2008/03/ruby-inject.html)
 
 ## Exercise
+
+The exercise are laid out in the same way as before, however there are still some subtle differences so I implore you to read the following closely.
 
 * Fork and clone this repository
 * Run Bundler
@@ -17,8 +30,6 @@ This week we take another step towards Test-Driven Development. Similar to how y
 * Write the methods required to make the examples pass in `lib/quotes.rb`
 * Commit your changes to the 'solutions' branch
 * Push your 'solutions' branch up to Github
-
-The exercise are laid out in the same way as before, however there are still some subtle differences so I implore you to read the following closely.
 
 ### Switch to the 'solutions' branch
 
