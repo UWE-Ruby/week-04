@@ -27,7 +27,7 @@ The exercise are laid out in the same way as before, however there are still som
 * Run Bundler
 * Run the tests / Setup Guard
 * Switch to the 'solutions' branch
-* Write the methods required to make the examples pass in `lib/quotes.rb`
+* Write the methods required to make the examples pass in each of the associated files in the lib directory.
 * Commit your changes to the 'solutions' branch
 * Push your 'solutions' branch up to Github
 
@@ -45,11 +45,11 @@ Before you commit any changes that solve this week's exercise I want you to crea
 
     $ git checkout solutions
     
-### Write the methods required to make the examples pass in `lib/quotes.rb`
+### Write the methods required to make the examples pass in each of the associated files in the lib directory
 
-A difference from last week, is that you should define the methods in the `quotes.rb` file found within the `lib` directory. This is so the implementation of your methods are independent of test files.
+A difference from last week, is that you should define the methods in the `lib` folder in the file that matches the name of spec folder. This is so the implementation of your methods are independent of test files.
 
-That means you will will be writing code in `lib/quotes.rb` that will make the tests, specified in the `spec` directory, to pass.
+That means you will will be writing code that fixes the `find_quote_spec.rb` in `lib/find_quote.rb`. Fix the `display_superheroes_spec.rb` in `display_superheroes.rb` ...
 
 ### Commit your changes to the 'solutions' branch
 
