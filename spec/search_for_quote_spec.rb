@@ -5,7 +5,7 @@ describe "#search_for_quote" do
   context "when the file does not exist" do
     
     it "should return an empty list of results" do
-      search_for_quote(:file => "FILE_DOES_NOT_EXIST",:starts_with => "The").should be_empty
+      search_for_quote(:file => "FILE_DOES_NOT_EXIST",:start_with => "The").should be_empty
     end
     
   end
@@ -31,7 +31,7 @@ describe "#search_for_quote" do
         
       end
       
-      describe "starts_with" do
+      describe "starts with" do
         
         it "should return all the quotes that contain the criteria" do
           results = search_for_quote(:file => TEXT_FILE,:start_with => "Her")
@@ -42,7 +42,7 @@ describe "#search_for_quote" do
         
       end
       
-      describe "ends_with" do
+      describe "ends with" do
         
         it "should return all the quotes that contain the criteria" do
           results = search_for_quote(:file => TEXT_FILE,:end_with => "dude")
