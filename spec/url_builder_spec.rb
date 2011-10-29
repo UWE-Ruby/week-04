@@ -19,7 +19,7 @@ describe "#url_builder" do
     end
     
     it "should append the parameter to the url" do
-      url_builder(url,:search => 'burgers').should == "#{url}?results=20&sort=asc&search=burgers"
+      url_builder(url,:search => 'burgers').should == "#{url}?results=10&sort=asc&search=burgers"
     end
     
   end
