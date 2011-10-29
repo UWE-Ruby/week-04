@@ -36,8 +36,4 @@ describe "#url_builder" do
     
   end
   
-  it "should fail" do
-    fail
-  end
-  
 end
