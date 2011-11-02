@@ -31,7 +31,7 @@ describe "#url_builder" do
   context "when a parameter is nil" do
     
     it "should ignore the parameter" do
-      url_builder(url,:results => '20',:search => 'burgers',:sort_by => nil).should == "#{url}?results=20&search=burgers"
+      url_builder(url,:search => 'burgers',:sort_by => nil).should == "#{url}?results=10&search=burgers"
     end
     
   end

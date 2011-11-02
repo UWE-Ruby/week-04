@@ -20,6 +20,7 @@ describe "#display_superheroes" do
     
     it "should allow parameters to be Arrays of heroes of single heroes" do
       should_receive(:puts).exactly(SuperHeroes.length)
+      
       display_superheroes SuperHeroes.first, SuperHeroes[1..-1]
     end
 

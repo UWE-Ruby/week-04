@@ -25,10 +25,30 @@ describe "#find_quote" do
         quote.should == "The dude abides"
       end
       
+      context "as a String" do
+        
+        it "should return any quote" do
+          
+          quote = find_quote(TEXT_FILE,"a")
+          quote.should_not be_nil
+          
+        end
+        
+      end
+      
       context "when the line specified is greater than the number of quotes" do
         
         it "should return any quote" do
           quote = find_quote(TEXT_FILE,999)
+          quote.should_not be_nil
+        end
+        
+      end
+      
+      context "when the line specified is less than 0" do
+        
+        it "should return any quote" do
+          quote = find_quote(TEXT_FILE,-1)
           quote.should_not be_nil
         end
         
